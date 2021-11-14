@@ -1,0 +1,1 @@
+PREFERRED_VERSION_python3-ruuvitag-sensor = "1.2.0"
