@@ -12,6 +12,7 @@ S = "${WORKDIR}/ruuvitag_sensor-1.2.0.tar.gz"
 
 PYPI_PACKAGE = "ruuvitag_sensor"
 
-RDEPENDS_${PN} = "bluez5 bluez-hcidump"
+RDEPENDS_${PN} = "bluez5 bluez-hcidump \
+                  python3-ptyprocess"
 
 inherit pypi setuptools3
