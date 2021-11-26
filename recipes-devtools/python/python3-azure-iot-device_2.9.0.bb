@@ -10,6 +10,8 @@ SRC_URI[sha256sum] = "29cac73645b82afbb3d1c8689dcc737cea346f2f6199a19d5fcab45af2
 
 S = "${WORKDIR}/azure-iot-device-2.9.0.tar.gz"
 
-RDEPENDS_${PN} = "python3-urllib3 python3-deprecation python3-six python3-requests python3-requests-unixsocket python3-pysocks"
+RDEPENDS_${PN} = "python3-urllib3 python3-deprecation python3-six python3-requests \
+                  python3-requests-unixsocket python3-pysocks \
+                  python3-paho-mqtt python3-chardet python3-idna"
 
 inherit pypi setuptools3
