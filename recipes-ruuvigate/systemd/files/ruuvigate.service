@@ -1,5 +1,7 @@
 [Unit]
 Description=Service to publish RuuviTag data to cloud
+Wants=network-online.target
+After=network-online.target
 
 [Service]
 User=root
