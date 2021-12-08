@@ -1,2 +1,5 @@
-# meta-ruuvi-azure
-Raspberry Pi Zero W as Azure IoT Central device to publish RuuviTag data
+# meta-ruuvigate
+Yocto layer hosting application for pushing RuuviTag data to cloud with the RuuviGate application:
+https://github.com/jlipponen/RuuviGate
+
+Only tested with Raspberry Pi Zero W and poky @dunfell
