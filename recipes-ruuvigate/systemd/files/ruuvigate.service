@@ -1,0 +1,9 @@
+[Unit]
+Description=Service to publish RuuviTag data to cloud
+
+[Service]
+User=root
+ExecStart=python3 -m ruuvigate -a /etc/ruuvigate/azure.yaml -r /etc/ruuvigate/ruuvi.yaml
+
+[Install]
+WantedBy=multi-user.target
