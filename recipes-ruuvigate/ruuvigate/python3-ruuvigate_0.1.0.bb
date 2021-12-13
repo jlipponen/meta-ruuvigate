@@ -13,3 +13,5 @@ SRCREV = "6a28018d7c5f4e9282332090af1051cbc19ddba5"
 S = "${WORKDIR}/git"
 
 RDEPENDS_${PN} = "python3-ruuvitag-sensor python3-azure-iot-device python3-pyyaml"
+
+PREFERRED_VERSION_python3-ruuvitag-sensor = "1.2.0+git%"
