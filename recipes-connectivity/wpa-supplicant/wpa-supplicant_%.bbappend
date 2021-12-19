@@ -7,7 +7,7 @@ SRC_URI += "\
 SYSTEMD_AUTO_ENABLE = "enable"
 SYSTEMD_SERVICE_${PN} += " wpa_supplicant-nl80211@wlan0.service"
 
-do_install_append () {
+do_install_append() {
    install -d ${D}${sysconfdir}/wpa_supplicant/
    install -m 600 ${WORKDIR}/wpa_supplicant-nl80211-wlan0.conf ${D}${sysconfdir}/wpa_supplicant/
 
