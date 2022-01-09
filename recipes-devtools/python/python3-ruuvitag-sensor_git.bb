@@ -8,7 +8,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=529e1909877071821558d4023ff657f5"
 inherit setuptools3
 
 SRC_URI = "git://github.com/jlipponen/ruuvitag-sensor.git;branch=check-for-root"
-SRCREV = "98a624c04648c5df9a82ad1d3c2135104a48581d"
+SRCREV = "c6d82b2f94b4a6ff4213dd7e2c269c18985a9b74"
 PV = "1.2.0+git${SRCPV}"
 
 S = "${WORKDIR}/git"
