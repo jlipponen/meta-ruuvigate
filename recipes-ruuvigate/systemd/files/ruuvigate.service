@@ -1,11 +1,13 @@
 [Unit]
 Description=Service to publish RuuviTag data to cloud
-Wants=network-online.target
 After=network-online.target
+Wants=network-online.target
 
 [Service]
 User=root
 ExecStart=python3 -m ruuvigate -a /etc/ruuvigate/azure.yaml -r /etc/ruuvigate/ruuvi.yaml
+Restart=on-failure
+RestartSec=10s
 
 [Install]
 WantedBy=multi-user.target
