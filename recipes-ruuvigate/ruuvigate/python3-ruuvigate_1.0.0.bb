@@ -8,7 +8,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=9102a09f09904a7cbd06a0b5ee52f0fc"
 inherit setuptools3
 
 SRC_URI = "git://github.com/jlipponen/RuuviGate.git;branch=main"
-SRCREV = "3d2b5899127b56015dc9d67bc97e634ae323e1ec"
+SRCREV = "cd7b8828ef2345dafcd64396e67219872b65f3c6"
 
 S = "${WORKDIR}/git"
 
