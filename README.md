@@ -31,7 +31,7 @@ Alternatively, you can mount the SD card's `root` filesystem and edit \
 `etc/wpa_supplicant/wpa_supplicant-nl80211-wlan0.conf`
 
 ## Configure Azure
-Set your Azure IoT Central device credentials to [azure.yaml](./meta-ruuvigate/recipes-ruuvigate/systemd/files/azure.yaml)
+Set your Azure IoT Central device credentials to [azure.yaml](./recipes-ruuvigate/systemd/files/azure.yaml)
 
 Alternatively, you can mount the SD card's `root` filesystem and edit \
 `etc/ruuvigate/azure.yaml`
