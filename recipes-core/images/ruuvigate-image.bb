@@ -7,5 +7,6 @@ IMAGE_INSTALL_append = " \
                 ruuvigate \
                 blueman \
                 wpa-supplicant \
-                ${@bb.utils.contains('SOC_FAMILY', 'rpi', 'packagegroup-raspberry', '', d)} \
                 "
+
+IMAGE_INSTALL_append_rpi = " packagegroup-raspberry"
