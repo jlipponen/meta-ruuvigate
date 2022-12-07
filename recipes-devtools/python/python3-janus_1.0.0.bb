@@ -13,4 +13,4 @@ S = "${WORKDIR}/janus-1.0.0"
 inherit pypi setuptools3
 
 DEPENDS += "python3-typing-extensions-native"
-RDEPENDS_${PN} += "python3-typing-extensions"
+RDEPENDS:${PN} += "python3-typing-extensions"

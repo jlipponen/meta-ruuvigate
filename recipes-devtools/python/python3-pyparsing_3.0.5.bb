@@ -10,6 +10,6 @@ SRC_URI[sha256sum] = "9329d1c1b51f0f76371c4ded42c5ec4cc0be18456b22193e0570c2da98
 
 S = "${WORKDIR}/pyparsing-3.0.5.tar.gz"
 
-RDEPENDS_${PN} = ""
+RDEPENDS:${PN} = ""
 
 inherit pypi setuptools3
