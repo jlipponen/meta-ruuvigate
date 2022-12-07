@@ -1,10 +1,10 @@
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 LICENSE = "CLOSED"
 inherit systemd
 
 SYSTEMD_AUTO_ENABLE = "enable"
-SYSTEMD_SERVICE_${PN} = "ruuvigate.service"
+SYSTEMD_SERVICE:${PN} = "ruuvigate.service"
 
 SRC_URI += "\
   file://ruuvigate.service \
@@ -12,9 +12,9 @@ SRC_URI += "\
   file://ruuvi.yaml \
 "
 
-FILES_${PN} += "${systemd_unitdir}/system/ruuvigate.service"
+FILES:${PN} += "${systemd_unitdir}/system/ruuvigate.service"
 
-do_install_append() {
+do_install:append() {
   install -d ${D}/${systemd_unitdir}/system
   install -m 644 ${WORKDIR}/ruuvigate.service ${D}/${systemd_unitdir}/system
 

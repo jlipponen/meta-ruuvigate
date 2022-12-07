@@ -10,6 +10,6 @@ SRC_URI[sha256sum] = "b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b0
 
 S = "${WORKDIR}/requests-2.26.0.tar.gz"
 
-RDEPENDS_${PN} = "python3-urllib3 python3-certifi"
+RDEPENDS:${PN} = "python3-urllib3 python3-certifi"
 
 inherit pypi setuptools3

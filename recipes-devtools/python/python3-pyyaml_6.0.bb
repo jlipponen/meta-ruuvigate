@@ -13,6 +13,6 @@ S = "${WORKDIR}/PyYAML-6.0"
 
 PYPI_PACKAGE = "PyYAML"
 
-RDEPENDS_${PN} = ""
+RDEPENDS:${PN} = ""
 
 inherit pypi setuptools3

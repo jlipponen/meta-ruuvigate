@@ -10,6 +10,6 @@ SRC_URI[sha256sum] = "096d689d78ca690e4cd8a89568ba06d07ca097e3306a4381635073ca91
 
 S = "${WORKDIR}/packaging-21.2.tar.gz"
 
-RDEPENDS_${PN} = "python3-pyparsing"
+RDEPENDS:${PN} = "python3-pyparsing"
 
 inherit pypi setuptools3

@@ -12,6 +12,6 @@ S = "${WORKDIR}/PySocks-1.7.1.tar.gz"
 
 PYPI_PACKAGE = "PySocks"
 
-RDEPENDS_${PN} = ""
+RDEPENDS:${PN} = ""
 
 inherit pypi setuptools3

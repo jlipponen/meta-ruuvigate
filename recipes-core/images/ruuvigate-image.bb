@@ -5,7 +5,7 @@ inherit features_check
 REQUIRED_MACHINE_FEATURES = "bluetooth"
 REQUIRED_DISTRO_FEATURES = "bluetooth"
 
-IMAGE_INSTALL_append = " \
+IMAGE_INSTALL:append = " \
                 python3 \
                 python3-ruuvigate \
                 ruuvigate \
@@ -13,4 +13,4 @@ IMAGE_INSTALL_append = " \
                 wpa-supplicant \
                 "
 
-IMAGE_INSTALL_append_rpi = " packagegroup-raspberry"
+IMAGE_INSTALL:append:rpi = " packagegroup-raspberry"

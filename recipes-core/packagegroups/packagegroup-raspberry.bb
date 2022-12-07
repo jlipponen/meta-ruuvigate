@@ -6,6 +6,6 @@ inherit packagegroup
 
 COMPATIBLE_MACHINE = "^rpi$"
 
-RDEPENDS_${PN} = "\
+RDEPENDS:${PN} = "\
     pi-bluetooth \
 "

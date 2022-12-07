@@ -10,6 +10,6 @@ SRC_URI[sha256sum] = "4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2
 
 S = "${WORKDIR}/urllib3-1.26.7.tar.gz"
 
-RDEPENDS_${PN} = ""
+RDEPENDS:${PN} = ""
 
 inherit pypi setuptools3

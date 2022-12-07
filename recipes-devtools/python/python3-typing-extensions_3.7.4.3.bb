@@ -1,7 +1,7 @@
 SUMMARY = "Backported and Experimental Type Hints for Python 3.7+"
 HOMEPAGE = "https://github.com/python/typing"
 AUTHOR = "Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee <levkivskyi@gmail.com>"
-LICENSE = "PSF"
+LICENSE = "PSF-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=64fc2b30b67d0a8423c250e0386ed72f"
 
 SRC_URI = "https://files.pythonhosted.org/packages/16/06/0f7367eafb692f73158e5c5cbca1aec798cdf78be5167f6415dd4205fa32/typing_extensions-3.7.4.3.tar.gz"

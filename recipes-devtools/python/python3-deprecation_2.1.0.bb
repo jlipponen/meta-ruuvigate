@@ -10,6 +10,6 @@ SRC_URI[sha256sum] = "72b3bde64e5d778694b0cf68178aed03d15e15477116add3fb773e581f
 
 S = "${WORKDIR}/deprecation-2.1.0.tar.gz"
 
-RDEPENDS_${PN} = "python3-packaging"
+RDEPENDS:${PN} = "python3-packaging"
 
 inherit pypi setuptools3
