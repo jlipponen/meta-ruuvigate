@@ -26,7 +26,7 @@ sudo bmaptool copy \
 ```
 
 ## Use prebuild image
-Alternatively, you may use a prebuild [Raspberry Pi Imager](https://www.raspberrypi.com/software/) compatible image found from releases. Download this image to your computer. Then install the Imager application from raspberrypi.com and select "CHOOSE OS" -> "Use custom" and browse to the prebuild image. After that, select the SD card by clicking the "CHOOSE STORAGE" and finally hit "WRITE".
+Alternatively, you may use a prebuild [Raspberry Pi Imager](https://www.raspberrypi.com/software/) compatible image found from [releases](https://github.com/jlipponen/meta-ruuvigate/releases). Download this image to your computer. Then install the Imager application from raspberrypi.com and select "CHOOSE OS" -> "Use custom" and browse to the prebuild image. After that, select the SD card by clicking the "CHOOSE STORAGE" and finally hit "WRITE".
 
 ![Alt text](./img/imager.png?raw=true "Rapsberry Pi Imager")
 
