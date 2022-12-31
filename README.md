@@ -5,6 +5,7 @@ Yocto layer providing an image hosting the [RuuviGate application](https://githu
 |Device|Yocto|
 |-|-|
 |Raspberry Pi Zero W V1.1|dunfell|
+|Raspberry Pi Zero W V1.1|kirkstone|
 
 ## Build
 Setup a Yocto environment in a supported version and capable of building an image for your device. There are multiple guides available online for Raspberry Pi, for example. Then add this layer and build the `ruuvigate-image` for your device. For example, you can follow these steps to build an image for Raspberry Pi Zero W with Yocto in Dunfell:
@@ -23,6 +24,11 @@ sudo bmaptool copy \
 --bmap /path/to/poky/build/tmp/deploy/images/raspberrypi0-wifi/ruuvigate-image-raspberrypi0-wifi.wic.bmap \
 /dev/mmcblk0
 ```
+
+## Use prebuild image
+Alternatively, you may use a prebuild [Raspberry Pi Imager](https://www.raspberrypi.com/software/) compatible image found from releases. Download this image to your computer. Then install the Imager application from raspberrypi.com and select "CHOOSE OS" -> "Use custom" and browse to the prebuild image. After that, select the SD card by clicking the "CHOOSE STORAGE" and finally hit "WRITE".
+
+![Alt text](./img/imager.png?raw=true "Rapsberry Pi Imager")
 
 ## Configure wireless
 Set your country, network name and password to [wpa_supplicant-nl80211-wlan0.conf](./recipes-connectivity/wpa-supplicant/files/wpa_supplicant-nl80211-wlan0.conf)
