@@ -14,3 +14,4 @@ IMAGE_INSTALL:append = " \
                 "
 
 IMAGE_INSTALL:append:rpi = " packagegroup-raspberry"
+IMAGE_FSTYPES:append:rpi = " rpi-sdimg"
