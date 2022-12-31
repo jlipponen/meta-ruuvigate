@@ -9,10 +9,8 @@ SRC_URI = "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74
 SRC_URI[md5sum] = "1d19c798f25e58e3e582f0f8c977dbb8"
 SRC_URI[sha256sum] = "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
 
-S = "${WORKDIR}/PyYAML-6.0"
+inherit pypi setuptools3
 
 PYPI_PACKAGE = "PyYAML"
 
 RDEPENDS:${PN} = ""
-
-inherit pypi setuptools3

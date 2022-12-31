@@ -8,9 +8,10 @@ SRC_URI = "https://files.pythonhosted.org/packages/b8/a8/facab7275d7d3d2032f3758
 SRC_URI[md5sum] = "2d8c0b884c14f18fc5223858eb16461e"
 SRC_URI[sha256sum] = "df976f2cdcfb034b147a2d51edfc34ff6bfb12d4e2643d3ad0e10de058cb1612"
 
-S = "${WORKDIR}/janus-1.0.0"
-
 inherit pypi setuptools3
 
-DEPENDS += "python3-typing-extensions-native"
-RDEPENDS:${PN} += "python3-typing-extensions"
+DEPENDS += "${PYTHON_PN}-typing-extensions-native"
+
+RDEPENDS:${PN} = " \
+	${PYTHON_PN}-typing-extensions \
+"
