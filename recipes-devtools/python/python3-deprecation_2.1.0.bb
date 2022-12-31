@@ -8,8 +8,8 @@ SRC_URI = "https://files.pythonhosted.org/packages/5a/d3/8ae2869247df154b64c1884
 SRC_URI[md5sum] = "6b79c6572fb241e3cecbbd7d539bb66b"
 SRC_URI[sha256sum] = "72b3bde64e5d778694b0cf68178aed03d15e15477116add3fb773e581f9518ff"
 
-S = "${WORKDIR}/deprecation-2.1.0.tar.gz"
-
-RDEPENDS:${PN} = "python3-packaging"
-
 inherit pypi setuptools3
+
+RDEPENDS:${PN} = " \
+	${PYTHON_PN}-packaging \
+"
