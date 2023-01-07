@@ -47,3 +47,29 @@ List your RuuviTag devices' MAC addressess in [ruuvi.yaml](./recipes-ruuvigate/s
 
 Alternatively, you can mount the SD card's `root` filesystem and edit \
 `etc/ruuvigate/ruuvi.yaml`
+
+## Enable SSH connectivity
+You can connect to your RuuviGate with SSH. By default, Public Key Authentication is used. First, generate a public and private key pair with `ssh-keygen`. For example:
+
+```
+~/.ssh$ ssh-keygen -t rsa -f ruuvigate
+```
+
+then copy the _ruuvigate.pub_ **public key** content to RuuviGate's [authorized_keys](./recipes-connectivity/openssh/files/authorized_keys) file. Futhermore, create the following entry to your SSH client's config file:
+
+```
+Host ruuvigate
+     HostName <IP-of-your-RuuviGate>
+     User root
+     Port 13666
+     IdentityFile /home/<your-username>/.ssh/ruuvigate.pub
+```
+
+Opening SSH connection should now work with:
+
+```
+$ ssh ruuvigate
+```
+
+Alternatively, you can mount the SD card's `root` filesystem and edit \
+`home/root/.ssh/authorized_keys`
