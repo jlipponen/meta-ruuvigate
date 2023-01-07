@@ -5,6 +5,10 @@ inherit features_check
 REQUIRED_MACHINE_FEATURES = "bluetooth"
 REQUIRED_DISTRO_FEATURES = "bluetooth"
 
+# Remove debug-tweaks as it causes unwanted tweaks to sshd_config
+IMAGE_FEATURES:remove = "debug-tweaks"
+IMAGE_FEATURES += "ssh-server-openssh"
+
 IMAGE_INSTALL:append = " \
                 python3 \
                 python3-ruuvigate \
