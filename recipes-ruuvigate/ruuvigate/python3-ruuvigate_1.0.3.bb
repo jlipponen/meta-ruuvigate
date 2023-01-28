@@ -5,8 +5,8 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=9102a09f09904a7cbd06a0b5ee52f0fc"
 
 SRC_URI = "https://github.com/jlipponen/RuuviGate/releases/download/${PV}/ruuvigate-${PV}.tar.gz"
-SRC_URI[md5sum] = "f15eab72350a3ef5f6114d9160eb529d"
-SRC_URI[sha256sum] = "fa77a1b1aaa5b87a0713ed8647ba42ba463af5f3ec6d0f47cddc86a8d7b1ff09"
+SRC_URI[md5sum] = "16497856983c7cbb3c617d2f4a4096ef"
+SRC_URI[sha256sum] = "3598ac19e670203eac5336ecc7a1ec024af61ae3e7dff306cb8cb51b62951bd3"
 
 inherit python_poetry_core
 
