@@ -1,16 +1,15 @@
 # meta-ruuvigate
 Yocto layer providing an image hosting the [RuuviGate application](https://github.com/jlipponen/RuuviGate), which is ran as a [systemd service](./recipes-ruuvigate/systemd/files/ruuvigate.service).
 
-## Supported devices and Yocto versions
-|Device|Yocto|
-|-|-|
-|Raspberry Pi Zero W V1.1|dunfell|
-|Raspberry Pi Zero W V1.1|kirkstone|
+## Supported devices
+|Supported devices|
+|-|
+|Raspberry Pi Zero W V1.1|
 
 ## Build
-Setup a Yocto environment in a supported version and capable of building an image for your device. There are multiple guides available online for Raspberry Pi, for example. Then add this layer and build the `ruuvigate-image` for your device. For example, you can follow these steps to build an image for Raspberry Pi Zero W with Yocto in Dunfell:
+Setup a Yocto environment in a supported version and capable of building an image for your device. There are multiple guides available online for Raspberry Pi, for example. Then add this layer and build the `ruuvigate-image` for your device. You can take these steps to build an image for Raspberry Pi Zero W with Yocto in mickledore:
 ```
-/poky$ git clone -b dunfell https://github.com/jlipponen/meta-ruuvigate.git
+/poky$ git clone -b mickledore https://github.com/jlipponen/meta-ruuvigate.git
 /poky$ source oe-init-build-env
 /poky/build$ bitbake-layers add-layer "/path/to/poky/meta-ruuvigate/"
 /poky/build$ export MACHINE="raspberrypi0-wifi" DISTRO="ruuvidistro" && bitbake ruuvigate-image
